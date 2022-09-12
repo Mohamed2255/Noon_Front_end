@@ -1,0 +1,116 @@
+
+    <div class="container p-4   ">
+        <div class="alert alert-success text-center" *ngIf="AccountCreated">تم انشاء الحساب بنجاح مرحبا فى موقع نون للتجاره الالكترونيه</div>
+        <div class="row justify-content-center align-items-center" >
+            <div class="card  px-3 py-5  main-shadow text-light form-bg-main" >
+                <h1 class="text-center mb-3 ">انشاء الحساب</h1>
+                <form [formGroup]="registerFrom" novalidate (submit)="handelRegistration()">
+                  <ul *ngIf="Errors?.length">
+                    <li *ngFor="let error of Errors" class="text-warning">{{error}}</li>
+                  </ul>
+                    <div class="row "   >
+                        <div class="col-md-6 col-sm-12 p-2">
+                            <div class="form-group mb-3">
+                                <label for="firstname" class="mb-2">الاسم الاول :</label>
+                                <input type="text" placeholder="ادخل الاسم الاول" class="form-control" name="firstName"
+                                    formControlName='firstName' id="firstname" [class.is-invalid]='FirstName?.invalid&&FirstName?.touched||!validatoInputs?.firstNameIsValid' />
+                           <div *ngIf="FirstName?.errors&&FirstName?.touched||!validatoInputs?.firstNameIsValid">
+                                <small *ngIf="FirstName?.errors?.['required']" class="text-warning">الاسم الاول مطلوب *</small><br>
+                                <small *ngIf="FirstName?.errors?.['minlength']" class="text-warning">اقل عدد حروف 3 *</small><br>
+                                <small *ngIf="FirstName?.errors?.['maxlength']" class="text-warning">اكبر عدد حروف 20 *</small><br>
+                           </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="lastname" class="mb-2">الاسم الاخير :</label>
+                                <input type="text" id='lastname' placeholder="ادخل الاسم الاخير" class="form-control"
+                                    formControlName='lastName' [class.is-invalid]='LastName?.touched&&LastName?.invalid||!validatoInputs?.lastNameIsValid'/>
+                                    <div *ngIf="LastName?.errors&&LastName?.touched||!validatoInputs?.lastNameIsValid">
+                                        <small   class="text-warning"  *ngIf="LastName?.errors?.['required']" class="text-warning">الاسم الاول مطلوب *</small><br>
+                                        <small   class="text-warning"  *ngIf="LastName?.errors?.['minlength']" class="text-warning">اقل عدد حروف 3 *</small><br>
+                                        <small   class="text-warning"  *ngIf="LastName?.errors?.['maxlength']" class="text-warning">اكبر عدد حروف 20 *</small><br>
+                                   </div>
+                                </div>
+                            <div class="form-group mb-3">
+                                <label for="email" class="mb-2">البريد الالكترونى:</label>
+                                <input type="email" id="email" placeholder="ادخل البريد الالكترونى :" class="form-control"
+                                    formControlName='email'[class.is-invalid]='Email?.touched&&Email?.invalid||!validatoInputs?.emailIsValid' />
+                                <div *ngIf="Email?.errors&&Email?.touched||!validatoInputs?.emailIsValid">
+                                    <small   class="text-warning"  *ngIf="Email?.errors?.['required']">الاميل مطلوب *</small><br>
+                                    <small    class="text-warning" *ngIf="Email?.errors?.['email']">الاميل غير صالح *</small><br>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="username" class="mb-2">اسم المستخدم :</label>
+                                <input type="text" id='username'placeholder="ادخل اسم المستخدم" class="form-control"
+                                    formControlName='userName'[class.is-invalid]='UserName?.touched&&UserName?.invalid||!validatoInputs?.userNameIsValid' />
+                                    <div *ngIf="UserName?.errors&&UserName?.touched||!validatoInputs?.userNameIsValid">
+                                        <small class="text-warning" *ngIf="UserName?.errors?.['required']">اسم المستخدم مطلوب *</small><br>
+                                        <small class="text-warning" *ngIf="UserName?.errors?.['minlength']">اسم المستخدم قصير للغايه اقل عدد حروف 8 *</small><br>
+                                    </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="phoneNumber" class="mb-2">رقم الهاتف :</label>
+                                <input type="tel" id='phoneNumber'placeholder="ادخل رقم الهاتف " class="form-control"
+                                    formControlName='phoneNumber'[class.is-invalid]='PhoneNumber?.touched&&PhoneNumber?.invalid||!validatoInputs?.phoneNumberIsValid' />
+                                    <div *ngIf="PhoneNumber?.errors&&PhoneNumber?.touched||!validatoInputs?.phoneNumberIsValid">
+                                        <small class="text-warning" *ngIf="PhoneNumber?.errors?.['required']">رقم الهاتف مطلوب  *</small><br>
+                                        <small class="text-warning" *ngIf="PhoneNumber?.errors?.['pattern']"> رقم الهاتف يجيب ان يكون 11 رقم *</small><br>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 p-2">
+                            <div class="form-group mb-3">
+                                <label for="password" class="mb-2">كلمه المرور :</label>
+                                <input type="password" id="password" placeholder="ادخل كلمه المرور :"  class="form-control"
+                                    formControlName='password'[class.is-invalid]='Password?.touched&&Password?.invalid ||!validatoInputs?.passwordIsValid' />
+                                <div *ngIf="Password?.errors&&Password?.touched||!validatoInputs?.passwordIsValid">
+                                    <small class="text-warning" *ngIf="Password?.errors?.['required']">كلمه المرور مطلوبه *</small><br>
+                                    <small class="text-warning" *ngIf="Password?.errors?.['minlength']">كلمه المرور قصيره على الاقل 8 حرورف  *</small><br>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="confirmpasswrd" class="mb-2"> اعاده كلمه المرور:</label>
+                                <input type="password" id="confirmpasswrd" placeholder="اعد كتابه كلمه المرور" class="form-control"
+                                    formControlName='confirmPassword'[class.is-invalid]='ConfirmPassowrd?.touched&&ConfirmPassowrd?.invalid||!validatoInputs?.confirmPasswordIsValid' />
+                                    <div *ngIf="registerFrom?.errors&&ConfirmPassowrd?.touched||ConfirmPassowrd?.errors&&ConfirmPassowrd?.touched||!validatoInputs?.confirmPasswordIsValid">
+                                             <small class="text-warning" *ngIf="ConfirmPassowrd?.errors?.['required']">اعد كتابه كلمه المرور *</small><br>
+                                              <small class="text-warning" *ngIf="registerFrom?.errors?.['MisMatch']">كلمه المرور غير متطابقه *</small>  
+                                    </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="country" class="mb-2">الدوله:</label>
+                                <input type="text" placeholder="ادخل اسم الدوله" class="form-control"
+                                    formControlName='country'[class.is-invalid]='Country?.touched&&Country?.invalid||!validatoInputs?.countryIsValid' />
+                                    <div *ngIf="Country?.errors&&Country?.touched||!validatoInputs?.countryIsValid">
+                                        <small class="text-warning" *ngIf="Country?.errors?.['required']">اسم الدوله مطلوب *</small><br>
+                               </div>                      
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="city" class="mb-2">اسم المدينه:</label>
+                                <input type="text" id="'city" placeholder="ادخل اسم المدينه" class="form-control"
+                                    formControlName='city'[class.is-invalid]='City?.touched&&City?.invalid||!validatoInputs?.cityIsValid' />
+                                    <div *ngIf="City?.errors&&City?.touched ||!validatoInputs?.cityIsValid">
+                                        <small class="text-warning" *ngIf="City?.errors?.['required']">اسم المدينه مطلوب *</small><br>
+                               </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="street" class="mb-2">بيانات الشارع:</label>
+                                <input type="text" placeholder="ادخل بيانات الشارع" class="form-control" id="street"
+                                    formControlName='street'[class.is-invalid]='Street?.invalid&&Street?.touched||!validatoInputs?.streetIsValid' />
+                                    <div *ngIf="Street?.errors&&Street?.touched||!validatoInputs?.streetIsValid">
+                                        <small class="text-warning" *ngIf="Street?.errors?.['required']">بيانات الشارع مطلوب *</small><br>
+                               </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="form-group mt-5">
+                        <input type="submit" class="form-control btn btn-warning " value="انشاء الحساب" />
+                    </div>
+                    <hr class="my-4">
+                    <p class="text-center ">هل لديك حساب بالفعل ؟ <a routerLink="/account/login" class="link-warning"style="cursor:pointer">تسجيل الدخول</a></p>
+                </form>
+    
+            </div>
+        </div>
+    </div>

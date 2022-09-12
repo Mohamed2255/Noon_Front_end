@@ -1,0 +1,68 @@
+<div class="alert alert-success text-center" *ngIf="isAdded">{{completeMessage}}</div>
+<div class="container p-5" >
+    <div class=" card p-3 jmain-shadow form-bg-main text-light" >
+        <h3 class="text-center mb-3">اضافه وحذف الوظائف من المستخدمين</h3>
+        <div class="row ustify-content-between p-3" style=" flex-direction: row;">
+            <ul  *ngIf="Errors?.length" class="text-warning">
+                <li *ngFor="let error of Errors">{{error}}</li>
+            </ul>
+            <div class="col-sm-6 px-2">
+                <div class="form-group">
+                    <label for="user">المستخدم</label>
+                    <select name="user" #user  class="form-control my-3" (change)="handelSelect(user.value)" [class.is-invalid]="!validator?.validUser">
+                        <option value="" class="text-center">اختر المستخدم</option>
+                        <option *ngFor="let user of users" value="{{user.id}}">{{ user.firstName  +"  "+user.lastName }}</option>
+                    </select>
+                </div>
+                <div *ngIf="selectedUser">
+                    <div class="form-group m-3 mt-4">
+                        <label class="mb-2">الرقم التعريفى :</label>
+                        <p>{{selectedUser.id}}</p>
+                    </div>
+                    <div class="form-group m-3 mt-4">
+                        <label class="mb-2">الاسم بالكامل:</label>
+                        <p *ngIf="selectedUser?.firstName">{{selectedUser?.firstName+" "+selectedUser?.lastName}}</p>
+                    </div>
+                    <div class="form-group m-3 mt-4">
+                        <label class="mb-2"> اسم المستخدم :</label>
+                        <p>{{selectedUser.userName}}</p>
+                    </div>
+                    <div class="form-group m-3 mt-4">
+                        <label class="mb-2"> البريد الالكترونى :</label>
+                        <p>{{selectedUser.email}}</p>
+                    </div>
+                    <div class="form-group m-3 mt-4">
+                        <label class="mb-2"> رقم الهاتف :</label>
+                        <p>{{selectedUser.phoneNumber}}</p>
+                    </div>
+                    <div class="form-group m-3 mt-4">
+                        <label class="mb-2"> اسم الدوله:</label>
+                        <p>{{selectedUser.country}}</p>
+                    </div>
+                    <div class="form-group m-3 mt-4">
+                        <label class="mb-2"> اسم المدينه  :</label>
+                        <p>{{selectedUser.city}}</p>
+                    </div>
+                    <div class="form-group m-3 mt-4">
+                        <label class="mb-2"> الشارع :</label>
+                        <p>{{selectedUser.street}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 px-3">
+                <div class="form-group">
+                    <label for="role">الوظيفه</label>
+                    <select id="'role" name="role" #Role  class="form-control my-3" (change)="handelSelectRole(Role.value)" [class.is-invalid]="!validator?.validRole">
+                        <option value="" class="text-center">اختر الوظيفه</option>
+                        <option *ngFor="let role of Roles" value="{{role}}">{{role}}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-between px-3">
+        <input type='button'class="btn-warning btn col-md-5 col-sm-12" value="اضافه الوظيفه على المستخدم" style="padding: 10px;" [disabled]="!validator?.validRole||!validator?.validUser" (click)="addRoleToUserHandeller()">
+        <input type='button'class="btn-danger btn col-md-5 col-sm-12" value="حذف الوظيفه من المستخدم" style="padding: 10px;" [disabled]="!validator?.validRole||!validator?.validUser" (click)="RemoveRoleFromUserHandeller()">
+            
+        </div>
+    </div>
+</div>

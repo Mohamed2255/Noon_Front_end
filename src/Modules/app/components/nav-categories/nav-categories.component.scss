@@ -1,0 +1,36 @@
+.all-catogries >* {
+    transition: all 1s ease-in-out;
+}
+.all-catogries  .categories-menu{
+    position: absolute;
+    top:102%;
+    right:-25%;
+    z-index:-100;
+    list-style: none;
+    visibility: hidden;
+    width: 150%;
+}
+.all-catogries:hover  .categories-menu,
+.subcategories-container:hover .subcategories-menu{
+    visibility: visible;
+    z-index: 111;
+}
+.subcategories-menu{
+    position: absolute;
+    right: 90%;
+    top: 0;
+    list-style: 0;
+    z-index: 111;
+    width: 100%;
+    z-index:-100;
+    list-style: none;
+    visibility: hidden;
+    background-color: #fff;
+}
+.nav-link{
+    transition: all 0.2s ease-in-out;
+}
+.nav-link:hover{
+    font-weight: 400;
+
+}

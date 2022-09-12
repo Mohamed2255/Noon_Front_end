@@ -1,0 +1,5 @@
+<div class="row justify-content-between subcate-container py-3" >
+    <div class="col"  *ngFor="let subateogry of Category.subCategories">
+        <app-subcategory-item [subcategory]="subateogry"></app-subcategory-item>
+    </div>
+</div>

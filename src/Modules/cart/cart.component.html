@@ -1,0 +1,12 @@
+<div class="container p-5">
+    <h1 class="text-center text-danger" *ngIf="!CartProducts.length">السله فارغه</h1>
+    <div class="row justify-content-between">
+        <app-cart-product-item class="col-md-5" *ngFor="let cartProduct of CartProducts" [CartProduct]="cartProduct" (changeQuantityEmmiter)="CalcTotal()"></app-cart-product-item>
+    </div>
+    <div *ngIf="cartTotalMony">
+        <p >الاجمالى : <strong> {{cartTotalMony}}</strong></p>
+        <div class="text-center">
+            <button class="btn btn-success col-md-6" (click)="HanderOrderNow()">الطلب الان</button>
+        </div>
+    </div>
+</div>

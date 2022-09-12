@@ -1,0 +1,6 @@
+<div class="container-fluid  ">
+        <app-subcateogries-container [Category]="Category"></app-subcateogries-container>
+        <div><img src="../../assets/images/Website-Images/home/noon-gift.webp" style="width: 100%;"/></div>
+        <app-products-contaner *ngIf="Products.length" [Products]="Products"></app-products-contaner>
+        <h1 *ngIf="!Products.length" class="my-5 text-danger text-center" >لم يتم اضافه منتجات لهذا التصنيف بعد</h1>
+</div>

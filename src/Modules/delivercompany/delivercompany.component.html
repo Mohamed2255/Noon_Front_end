@@ -1,0 +1,34 @@
+<a class="btn btn-primary m-3" (click)="gotocreate()">اضافة <i class="fa fa-plus" aria-hidden="true"></i></a>
+<router-outlet></router-outlet>
+<div class="container" *ngIf="compnies">
+<div class="row">
+<div class="card col-3 m-2 " style="width:350px;"   *ngFor="let c of  compnies">
+  <div class="card-body">
+    <h4 class="card-title"> {{c.name}}</h4>
+    <h5 class="card-subtitle mb-2 "> {{c.contactNumber}}</h5>
+    <h6 class="card-title"> {{c.address}}</h6>
+    <hr>
+    <a class="btn details-btn m-1" (click)="details(c.id)">تفاصيل <i class="fa fa-eye"></i></a>
+    <a class="btn btn-danger m-1"(click)="delete(c.id)">مسح <i class="fa fa-trash"></i></a>
+    <a class="btn edit-btn m-1" (click)="update(c.id)">تعديل <i class="fa fa-edit"></i></a>
+  </div>
+  </div>
+</div>
+</div>
+
+
+<style>
+    .table th,td {
+       text-align: center;   
+    }
+    .details-btn
+    {
+      background-color: #1794A5;
+      color: #fff;
+    }
+    .edit-btn
+    {
+      background-color: #99A9C9;
+      color: #fff;
+    }
+ </style>

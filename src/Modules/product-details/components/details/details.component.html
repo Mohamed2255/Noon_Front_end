@@ -1,0 +1,28 @@
+<div >
+    <h1>{{product.name}}</h1>
+    <p *ngIf="product.discount"> قبل : <del>{{product.price}} </del> جنيه</p>
+    <p>الان : <strong class="money" >{{product.price}} جنيه</strong>  يشمل ضريبه القيمه المضافه</p>
+    <p *ngIf="product.discount"> وفرت : <b class="money">{{product.price*(product.discount/100)}} </b> جنيه   <span class=" discount">{{product.discount/100|percent}}</span></p>
+    <div class="p-4 my-3" style="background-color:rgb(252, 251, 245); font-weight: 400;">
+        <p >
+            <img src="../../../../assets/images/Website-Images/emi.svg" /> 
+            دفعات شهرية تبدأ من جنيه 528
+            <a href="#"> عرض المزيد من التفاصيل</a>
+        </p>
+    </div>
+    <div>
+        <img src="../../../../assets/images/Website-Images/ar_pdp-01.webp"  class='img-fluid'/>
+    </div>
+    <div class="my-4 p-4 " style="background-color: #F5F7FE;">
+        <div class="row">
+            <span class="col" > اطلب فى غضون 15 ساعه </span> <img class="col" src="../../../../assets/images/Website-Images/fulfilment_express_v2-ar.svg" style="max-width: 100px;"/>
+        </div>
+        <div class="p-2 mt-3 row" style="background-color: #fff;">
+            <img  class="col" style="max-width:50px;" src="../../../../assets/images/Website-Images/same_day_delivery.svg" alt="">
+            <span class="col">
+                تبيه اليوم؟ اختار احصل عليه اليوم خلال إنهائك للطلب10 ساعة و 56 دقيقة.
+            </span>
+        </div>
+    </div>
+    <button class="col-sm-12 btn text-white " style="background-color: #2B4CD7;font-weight:700 ;" (click)="HandelAddProductToCart()">اضافه الى عربه التسوق</button>
+</div>

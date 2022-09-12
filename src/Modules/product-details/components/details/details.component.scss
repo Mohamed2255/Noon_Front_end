@@ -1,0 +1,23 @@
+.discount{
+    background: rgb(223, 241, 217);
+    color: rgb(55, 174, 2);
+    padding: 0px 0.5em;
+    font-size: 12px;
+    margin: 0px 12px;
+    border-radius: 2px;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-weight: 800;
+}
+p{
+    font-size: 14px;
+   color:  rgb(126, 133, 155);
+//    font-weight: 200;
+}
+.money{
+    font-weight: 900;
+    color: #000;
+}

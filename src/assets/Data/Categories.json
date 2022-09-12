@@ -1,0 +1,176 @@
+[
+    {
+      "id": "f5e3ddda-e3ad-4e2f-6b55-08da7d2d561c",
+      "name": "الالكتلرونيات",
+      "subCategories": [
+        {
+          "subCategoryId": "ce797a0f-e2ca-4e7c-824b-08da7d321b4b",
+          "subCategoryName": "اجهزه الارتداء",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/1e639c7b-6853-449e-94ab-ee87c84cec22_اجهزه الارتداء.webp"
+        },
+        {
+          "subCategoryId": "b971c1ea-68e0-4a41-824c-08da7d321b4b",
+          "subCategoryName": "موبليلات",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/ab1c0cde-dc7a-4f00-b993-4f1d6552d083_موبيلات.webp"
+        },
+        {
+          "subCategoryId": "56379bae-fee5-4283-824d-08da7d321b4b",
+          "subCategoryName": "اجهزه الشبكات",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/9f633bde-1292-4a06-a95b-893d42a4ca3b_اجهزه الشبكات.webp"
+        },
+        {
+          "subCategoryId": "8ff1aeed-8a5c-448b-824e-08da7d321b4b",
+          "subCategoryName": "العاب الفديو",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/69f8a90c-cd0b-403a-a7ca-f81cc53515d9_العاب فديو.webp"
+        },
+        {
+          "subCategoryId": "9f224328-aa31-4378-824f-08da7d321b4b",
+          "subCategoryName": "اجهزه التابلت",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/b1c31787-5c19-4879-80be-a599a84625cb_اجهزه التابلت.webp"
+        },
+        {
+          "subCategoryId": "d5af816e-32e9-4929-8250-08da7d321b4b",
+          "subCategoryName": "سماعات",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/ae962a51-7b63-4485-ac1a-d4a6d875d8da_سماعات.webp"
+        },
+        {
+          "subCategoryId": "2e064942-fe2b-455a-8251-08da7d321b4b",
+          "subCategoryName": "تخزين البيانات",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/de329a7d-9321-46a6-9b4c-4d10c8a226c3_تخزين البيانات.webp"
+        },
+        {
+          "subCategoryId": "a961a8a4-f440-4eb0-8252-08da7d321b4b",
+          "subCategoryName": "كاميرات",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/16ba5050-7a8c-4481-88b9-01d48b35cf74_كاميرات.webp"
+        },
+        {
+          "subCategoryId": "0e571ae7-1f36-476e-8253-08da7d321b4b",
+          "subCategoryName": "تلفزيونات",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/02bcd829-2af9-469c-bb93-6e94e3a3ab8b_تلفزيونات.webp"
+        },
+        {
+          "subCategoryId": "ac923d4f-4130-4d39-8254-08da7d321b4b",
+          "subCategoryName": "اجهزه اللابتوت",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/0aabb82f-f7a5-48b0-b569-6745e77498e8_اجهزه اللابتوب.webp"
+        }
+    
+     
+    },
+    {
+      "id": "6ceeca8f-824f-4353-6b56-08da7d2d561c",
+      "name": "الازياء",
+      "subCategories": [
+        {
+          "subCategoryId": "5faa4eef-cdfd-4ed6-ff87-08da7d549e95",
+          "subCategoryName": "فساتين",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/46dc2abf-c701-475c-87d1-862242d2bc2c_فساتين.webp"
+        },
+        {
+          "subCategoryId": "3a1aa74d-b8af-4e37-ff88-08da7d549e95",
+          "subCategoryName": "ساعات",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/f6f92deb-f30f-4f9f-99d3-ddac5fdac094_ساعات.webp"
+        },
+        {
+          "subCategoryId": "a8c3285e-0a23-40f8-ff89-08da7d549e95",
+          "subCategoryName": "تيشرتات",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/98e44612-ad1d-4742-8c06-d77565356a75_تيشرتات.webp"
+        },
+        {
+          "subCategoryId": "b7ef8dd7-4171-4187-ff8a-08da7d549e95",
+          "subCategoryName": " بلوزات وقمصان",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/4efad90d-f251-4db3-aa84-9720d2331ca4_بلوزات وقمصان.webp"
+        },
+        {
+          "subCategoryId": "29d57862-99b8-46ee-ff8b-08da7d549e95",
+          "subCategoryName": "شباشب",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/9245195c-6f0f-4a11-ac7d-7f39fdf05514_شباشب.webp"
+        },
+        {
+          "subCategoryId": "6d33fa64-b09e-4043-ff8c-08da7d549e95",
+          "subCategoryName": "مجوهرات",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/a230c8ed-b2a4-4793-8774-011e1a4dd9b7_مجوهرات.webp"
+        }
+      ],
+      "products": []
+    },
+    {
+      "id": "769ad047-3526-4da4-6b57-08da7d2d561c",
+      "name": "المطبخ والاجهزه المنزليه",
+      "subCategories": [
+        {
+          "subCategoryId": "d53c31b3-5ff3-4f26-ff95-08da7d549e95",
+          "subCategoryName": "مستلزمات السرير",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/2340993a-2f23-43a1-b08c-fd4d05748926_مستلزمات السرير.webp"
+        },
+        {
+          "subCategoryId": "c234cd6b-413c-44cc-ff96-08da7d549e95",
+          "subCategoryName": "ادوات واكسسوارات المطبخ",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/2df5dce8-b7cf-4070-b98c-c81d4bc52618_ادوات واكسسوارات المطبخ.webp"
+        },
+        {
+          "subCategoryId": "91ffcd58-c779-4c20-ff97-08da7d549e95",
+          "subCategoryName": "ادوات النظافه",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/c717a213-6456-4678-893d-2946cd68b258_ادوات النظافه.webp"
+        },
+        {
+          "subCategoryId": "9069bd01-c270-4f2d-ff98-08da7d549e95",
+          "subCategoryName": "ادوات التقديم",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/92ecef77-e4dc-4bf2-b157-8760e26d86e0_ادوات التقديم.webp"
+        },
+        {
+          "subCategoryId": "738deac4-ff12-4eea-ff99-08da7d549e95",
+          "subCategoryName": "ادوات التصليح",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/7834d3a2-8be7-4225-9475-85079eaeb00d_ادوات التصليح.webp"
+        }
+      ],
+      "products": []
+    },
+    {
+      "id": "31d77447-d221-48d7-6b58-08da7d2d561c",
+      "name": "الجمال",
+      "subCategories": [],
+      "products": []
+    },
+    {
+      "id": "ddb54138-725c-480f-6b59-08da7d2d561c",
+      "name": "الاطفال والبيبى والالعاب",
+      "subCategories": [
+        {
+          "subCategoryId": "f9cc1e1b-4c6f-46a4-ff8e-08da7d549e95",
+          "subCategoryName": "لوازم تنقل البيبى",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/fd437c29-c163-4092-94c1-342184fa94a5_لوازم تنقل البيبى.webp"
+        },
+        {
+          "subCategoryId": "0e8fe207-72a2-43de-ff8f-08da7d549e95",
+          "subCategoryName": "شنط الحفضات",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/9af9aa49-7e86-47c3-94da-ee587ba122b6_شنط الفاضات.webp"
+        },
+        {
+          "subCategoryId": "8d6b0df2-ab37-4d47-ff90-08da7d549e95",
+          "subCategoryName": "سكاتات وببرونات",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/cb2c76ee-9e59-4be2-b442-eeabd9be66b7_سكاتات وببرونات.webp"
+        },
+        {
+          "subCategoryId": "fc6dd76f-2a9b-4d6e-ff91-08da7d549e95",
+          "subCategoryName": "سراير وكراسى هزازه",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/c437412c-9e98-4e45-ba89-46cd73cdd7f0_سراير وكراسى هزازه.webp"
+        },
+        {
+          "subCategoryId": "359f00e3-d632-40ea-ff92-08da7d549e95",
+          "subCategoryName": "الحفاضات والمناديل المبلله",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/1ff317e8-c4ad-4919-a48d-31f46b36dedd_الحفاضات والمناديل المبلله.webp"
+        },
+        {
+          "subCategoryId": "a3d5f95d-659c-4475-ff93-08da7d549e95",
+          "subCategoryName": "الالعاب",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/e6affb1f-cc1c-4464-84ff-23ad12f6aeab_الالعاب.webp"
+        },
+        {
+          "subCategoryId": "f23fa4d6-eb57-4a81-ff94-08da7d549e95",
+          "subCategoryName": "الاستحمام والعنايه بالطفل",
+          "subCategoryImage": "https://localhost:5200/images/subCategoryImages/04530dae-eafe-43af-85a3-19e6e6468b49_الاستحمام والعنايه بالطفل.webp"
+        }
+      ],
+      "products": []
+    }
+  ]

@@ -1,0 +1,10 @@
+<div class="my-3 card secondary-shadow p-5  ">
+    <div class="text-center"><img src='{{CartProduct.product.productImage}}' style="width: 150px;"/></div>
+    <h1>{{CartProduct.product.name}}</h1>
+    <!-- <p>قبل :   <del>{{CartProduct.product.price}}</del></p> -->
+    <p>السعر :   <strong>{{CartProduct.product.price}}</strong></p>
+    <strong>الاجمالى : {{CartProduct.product.price*CartProduct.Quantity}}</strong>
+    
+    <input class="form-control" type="number" [value]="CartProduct.Quantity" #QuantityInput (change)="HandelQuantityChange(QuantityInput)"/>
+    <span class="btn-remove text-light bg-danger" (click)="HandelCancel()">X</span>
+</div>

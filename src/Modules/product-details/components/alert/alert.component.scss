@@ -1,0 +1,10 @@
+.alert{
+    position: fixed;
+    z-index: 999;
+    top: 30%;
+    right: -100%;
+    transition: right 0.8s ease-in-out;
+}
+.alert.show{
+    right: 20px;
+}

@@ -1,0 +1,31 @@
+
+<div class="alert alert-success text-center" [class.show]="islogined">تم تسجيل الدخول مرحبا فى موقع نون للتجاره الالكترونيه</div>
+<div class="container " >
+    <div class="row justify-content-center align-items-center">
+        <div class="card col-md-6 col-sm-12 px-3 py-5 text-light  form-bg-main">
+            <h1 class="text-center mb-3">تسجيل الدخول</h1>
+            <form [formGroup]="loginForm" #form (submit)="HandelLogin(form)"  novalidate>
+        
+                <div *ngIf="Error?.value" class="text-warning">
+                    <small>{{Error?.value}}</small>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="'username" class=" fw-3 mb-2">أسم المستخدم :</label>
+                    <input type="text" name="username" class="form-control" formControlName="userName"  [class.is-invalid]='!isvalidUser||UserName?.invalid&&UserName?.touched'/>
+                    <small class="text-warning" *ngIf="!isvalidUser||UserName?.invalid&&UserName?.touched">ادخل اسم المستخدم *</small>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="password" class="fw-3 mb-2 ">كلمه المرور :</label>
+                    <input type="password" name="password" class="form-control" formControlName="password"  [class.is-invalid]='!isvalidPassword||Password?.invalid&&Password?.touched'/>
+                    <small class="text-warning" *ngIf="!isvalidPassword||Password?.invalid&&Password?.touched">ادخل كلمه المرور *</small>
+               
+                </div>
+                <input type="submit" class="btn btn-warning form-control" value="تسجيل الدخول">
+                <hr class="my-3 text-dark">
+                <div class="mt-2">
+                    <p class="text-center">ليس لديك حساب ؟ <a routerLink="/account/register" class="link-warning">انشاء حساب</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

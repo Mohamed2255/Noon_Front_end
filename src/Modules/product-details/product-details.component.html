@@ -1,0 +1,18 @@
+<div class="container-fluid py-4">
+    <div class="row">
+        <div class="col-md-4">
+            <app-product-image [imageUrl]="product.productImage"></app-product-image>
+        </div>
+        <div class="col-md-4 p-3" style="border-inline-end: 1px solid #999;">
+            <app-details [product]="product"  (ShowAlertEmitter)="handelShowAlert($event)"></app-details>
+        </div>
+        <div class="col-md-4">
+            <app-adetianl-details ></app-adetianl-details>
+        </div>
+    </div>
+   <div class="container">
+    تفاصيل المنتج :
+    <p  style="font-size: 20px;">{{product.description}}</p>
+   </div>
+</div>
+<app-alert [showAlert]="show" ></app-alert>

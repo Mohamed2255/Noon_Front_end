@@ -1,0 +1,82 @@
+<div  class="container-fluid">
+<div class="row">
+    <div class="sidebar col-md-2 bg-main">
+        <ul class="sidebar-nav">
+            <li class="sidebar-home">
+                <a routerLink="/">
+                    <img src="../../assets/images/Website-Images/noon-logo-ar.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">الرئيسية</a>
+            </li>
+            <li>
+                <a  (click)="click()">الفئات الاساسية</a>
+            </li>
+            <li>
+                <a routerLink="categories">االفئات</a>
+            </li>
+            <li>
+                <a routerLink="products">المنتجات</a>
+            </li>
+            <li>
+                <a href="#">الطلبات</a>
+            </li>
+            <li>
+                <a href="#">الشركات</a>
+            </li>
+            <li>
+                <a (click)="Delivercompnies()">شركات التوصيل</a>
+            </li>
+            <li>
+                <a href="#">الفواتير</a>
+            </li>
+            <li>
+                <a href="#">اتصل بنا</a>
+            </li>
+        </ul>
+    </div>
+    <div class="content col-md-10 mt-5">
+        <router-outlet></router-outlet>    
+    </div>
+</div>
+</div>
+
+
+<style>
+
+/* Sidebar Styles */
+.sidebar
+{
+background-color:#1794A5;
+font-size: larger;
+bottom: 0;
+}
+.sidebar-nav 
+{
+padding: 5px;
+margin: 5px;
+}
+.sidebar-nav li 
+{
+    list-style: none;
+    line-height: 40px;
+    padding: 0;
+    margin-top: 15px;
+ 
+}
+.sidebar-nav a
+{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+.sidebar-nav li a:hover {
+    color: #feee66;
+    
+}
+
+
+
+</style> 

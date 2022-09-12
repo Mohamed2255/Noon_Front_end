@@ -1,0 +1,23 @@
+<div class="container">
+     <form [formGroup] = "uploadForm" (ngSubmit)="onSubmit()">   
+        <div class="form-group mb-2">
+          <label  class="form-label">الأسم</label>
+          <input [class.is-invalid]="name?.invalid && name?.touched"   type="text" formControlName="name" class="form-control">
+          <div *ngIf="name?.errors && name?.touched"> 
+             <small class="text-danger" *ngIf="name?.errors?.['required']">هذا الحقل مطلوب</small>
+             <small class="text-danger" *ngIf="name?.errors?.['minlength']">يجب ان يكون الاسم اكثر من حرفين</small>
+           </div>
+        </div>
+        <div class="form-group mb-2">
+            <label  class="form-label">الصورة</label>
+             <input type="file" [class.is-invalid]="image?.invalid && image?.touched" class="form-control" name="image"  (change)="onFileSelect($event)" />
+          </div>
+          <div *ngIf="image?.errors && image?.touched"> -->
+            <small class="text-danger" *ngIf="image?.errors?.['required']">هذا الحقل مطلوب</small>
+  
+          </div>
+          <div>
+            <button type="submit" class="btn btn-success" [disabled]="uploadForm.invalid"  >انشاء</button>
+            </div>
+      </form>
+</div> 

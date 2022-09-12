@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    --main-color:#FEEE00;
+    --red-color:#E80000;
+    --dark-color:#000;
+    --section-back-color:#F7F7FA;
+    --light-gray-color:#99A9C9;
+    direction: rtl;
+}
+body{
+    direction: rtl !important;
+    // font-family: 'Readex Pro', sans-serif;
+    //font-family: 'Kufam', sans-serif;
+    //font-family:cursive, Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;
+    font-family: Cairo, Tahoma, sans-serif !important;
+    overflow-x: hidden;
+ 
+}
+.main-shadow{
+    box-shadow: 3px 3px 4px var(--light-gray-color), -3px -3px 4px var(--light-gray-color);
+}
+.secondary-shadow{
+    box-shadow: 3px 3px 4px #eee, -3px -3px 4px #eee;
+}
+.text-main{
+    color: var(--main-color);
+}
+.text-red{
+    color: var(--red-color);
+}
+.text-dark{
+    color: var(--dark-color);
+}
+.bg-main{
+    background-color: var(--main-color);
+}
+.bg-red{
+    background-color: var(--red-color);
+}
+.bg-dark{
+    background-color: var(--dark-color);
+}
+.form-bg-main {
+    background-color: #1794A5;
+}
+.bg-section{
+    background-color: var( --section-back-color);
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.btn-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.navbar-brand img{
+    // display: inline-block;
+    width: 70px;
+    object-fit: cover;
+}
+.navbar-brand.eg-flage img{
+    width: 20px;
+}
+.deliver-to-cairo{
+    display: inline-block;
+    font-size: 14px;
+}
+.my-text-small{
+    font-weight: 300;
+    font-size: 13px;
+    color: #999;
+}
+.sub-cate-item{
+    width: 150px;
+    height: 150px;
+
+}
+.sub-cate-item img{
+ width: 100%;
+    object-fit: cover;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar:vertical:hover {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    background: linear-gradient(to top,var(--main-color),var(--light-gray-color));
+    border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top,var(--main-color),var(--red-color));
+    border-radius: 2px;
+}

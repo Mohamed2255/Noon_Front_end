@@ -1,0 +1,37 @@
+
+  <a class="btn btn-primary m-3" (click)="gotocreate()">اضافة <i class="fa fa-plus" aria-hidden="true"></i></a>
+<div class="container">
+<div class="row">
+<div class="card col-3 m-2 " style="width:350px;"   *ngFor="let s of SupCtegories">
+  <img class="card-img-top" height="200" width="260" src="{{s.subCategoryImage}}" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">{{s.subCategoryName}}</h4>
+    <a class="btn details-btn m-1" (click)="details(s.subCategoryId)">تفاصيل <i class="fa fa-eye"></i></a>
+    <a class="btn btn-danger m-1"(click)="delete(s.subCategoryId)">مسح <i class="fa fa-trash"></i></a>
+    <a class="btn edit-btn m-1" (click)="update(s.subCategoryId)">تعديل <i class="fa fa-edit"></i></a>
+  </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+          <style>
+.table th,td {
+   text-align: center;   
+}
+.details-btn
+{
+  background-color: #1794A5;
+  color: #fff;
+}
+.edit-btn
+{
+  background-color: #99A9C9;
+  color: #fff;
+}
+          </style>
